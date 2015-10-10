@@ -48,7 +48,14 @@ body{
     padding-top: 70px;
 
 }
+/*STYLING THE BIO SECTION*/
+#bio{
+    margin-left: 30%;
+    font-size: 16px;
+    font-family: architects-daughter;
+}
 .thumb{
+    color: purple;
 
 }
 
