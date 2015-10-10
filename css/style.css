@@ -1,0 +1,11 @@
+#landing{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 85vh;
+    background-image: url(../images/land1.jpg);
+}
+body{
+    margin: 0;
+    padding: 0
+}
