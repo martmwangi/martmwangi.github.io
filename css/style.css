@@ -19,27 +19,37 @@ body{
 /*STYLING FOR THE ELEMENTS INSIDE THE LANDING PAGE*/
 .name{
     color: white;
-    font-family: alex-brush;
+    font-family: bad-script;
     margin-left: 30%;
 
 
 }
 .front{
     color: white;
-    font-family: alex-brush;
+    font-family: bad-script;
     margin-left: 30%;
 
 
 }
 .mobile{
     color: white;
-    font-family: alex-brush;
+    font-family: bad-script;
     margin-left: 30%;
     border-bottom: 2px solid white;
+    padding-top: 5px;
 
 }
 .prof{
     padding-top: 130px;
+}
+.na{
+    color: white;
+    padding-left: 40%;
+    padding-top: 70px;
+
+}
+.thumb{
+
 }
 
 
