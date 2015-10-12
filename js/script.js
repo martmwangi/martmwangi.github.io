@@ -1,54 +1,31 @@
-  window.onload = function () {
-        var chart = new CanvasJS.Chart("chartContainer", {
-            title: {
-                text: "Mobile Phones Used For",
-                fontFamily: "Verdana",
-                fontColor: "Peru",
-                fontSize: 28
+      google.load("visualization", "1.1", {packages:["bar"]});
+      google.setOnLoadCallback(drawStuff);
 
-            },
-            animationEnabled: true,
-            axisY: {
-                tickThickness: 0,
-                lineThickness: 0,
-                valueFormatString: " ",
-                gridThickness: 0
-            },
-            axisX: {
-                tickThickness: 0,
-                lineThickness: 0,
-                labelFontSize: 18,
-                labelFontColor: "Peru"
+      function drawStuff() {
+        var data = new google.visualization.arrayToDataTable([
+          ['Languages', 'Percentage'],
+          ["HTML", 65],
+          ["CSS", 57],
+          ["Javascript", 38],
+          ["Python", 35],
+          ['Java', 25]
+        ]);
 
-            },
-            data: [
-            {
-                indexLabelFontSize: 26,
-                toolTipContent: "<span style='\"'color: {color};'\"'><strong>{indexLabel}</strong></span><span style='\"'font-size: 20px; color:peru '\"'><strong>{y}</strong></span>",
-
-                indexLabelPlacement: "inside",
-                indexLabelFontColor: "white",
-                indexLabelFontWeight: 600,
-                indexLabelFontFamily: "Verdana",
-                color: "#62C9C3",
-                type: "bar",
-                dataPoints: [
-                    { y: 21, label: "21%", indexLabel: "Video" },
-                    { y: 25, label: "25%", indexLabel: "Dining" },
-                    { y: 33, label: "33%", indexLabel: "Entertainment" },
-                    { y: 36, label: "36%", indexLabel: "News" },
-                    { y: 42, label: "42%", indexLabel: "Music" },
-                    { y: 49, label: "49%", indexLabel: "Social Networking" },
-                    { y: 50, label: "50%", indexLabel: "Maps/ Search" },
-                    { y: 55, label: "55%", indexLabel: "Weather" },
-                    { y: 61, label: "61%", indexLabel: "Games" }
-
-
-                ]
+        var options = {
+          title: '',
+          width: 900,
+          legend: { position: 'none' },
+          chart: { title: '',
+                   subtitle: '' },
+          bars: 'horizontal', // Required for Material Bar Charts.
+          axes: {
+            x: {
+              0: { side: 'top', label: 'Percentage'} // Top x-axis.
             }
-            ]
-        });
+          },
+          bar: { groupWidth: "90%" }
+        };
 
-        chart.render();
-    }
-  </script>
+        var chart = new google.charts.Bar(document.getElementById('top_x_div'));
+        chart.draw(data, options);
+      };
