@@ -96,10 +96,10 @@
         <div class="container">
                     <h3>Drop me a line<i class="fa fa-envelope"></i></h3>
         <div class="row">
-    <form class="col s12">
+    <form action="//formspree.io/martmwangi86@gmail.com" method="POST" class="col s12">
       <div class="row">
         <div class="input-field col s6">
-          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+          <input placeholder="Placeholder" id="first_name" name="name" type="text" class="validate">
           <label for="first_name">First Name</label>
         </div>
         <div class="input-field col s6">
@@ -110,7 +110,7 @@
 
      <div class="row">
         <div class="input-field col s5">
-          <input id="email" type="email" class="validate">
+          <input id="email" type="email" name="_replyto" class="validate">
           <label for="email">Email</label>
         </div>
       </div>
@@ -119,6 +119,9 @@
             <textarea id="textarea1" class="materialize-textarea" length="120"></textarea>
             <label for="textarea1">Message</label>
     </div>
+            <input type="submit" value="send">
+            <input type="hidden" name="_next" value="//martmwangi.github.io/contact" />
+            <input type="hidden" name="_subject" value="Website contact" />
        </form>
   </div>
 
