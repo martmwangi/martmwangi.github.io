@@ -29,3 +29,23 @@
         var chart = new google.charts.Bar(document.getElementById('top_x_div'));
         chart.draw(data, options);
       };
+//For smooth scroll
+$(document).ready(function()){
+          setBindings();
+});
+function setBindings(){
+    $("nav a").click(function(e){
+        var sectionID = e.currentTarget.id + "section";
+        alert('button id' + sectionID);
+    })
+}
+
+
+
+
+
+
+
+
+
+
