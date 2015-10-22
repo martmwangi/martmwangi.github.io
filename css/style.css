@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     margin-top: -31px;
     background-image: url(../images/land3.jpg);
     background-position: center;
@@ -41,7 +41,7 @@ body{
 
 }
 .prof{
-    padding-top: 130px;
+    padding-top: 150px;
 }
 .na{
     color: white;
