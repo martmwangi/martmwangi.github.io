@@ -30,16 +30,29 @@
         chart.draw(data, options);
       };
 //For smooth scroll
-$(document).ready(function()){
-          setBindings();
+//$(document).ready(function()){
+//          setBindings();
+//});
+//function setBindings(){
+//    $("nav a").click(function(e){
+//        var sectionID = e.currentTarget.id + "section";
+//        alert('button id' + sectionID);
+//    })
+//}
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
 });
-function setBindings(){
-    $("nav a").click(function(e){
-        var sectionID = e.currentTarget.id + "section";
-        alert('button id' + sectionID);
-    })
-}
-
 
 
 
