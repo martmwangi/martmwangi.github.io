@@ -129,6 +129,21 @@
     </div>
 
         <footer></footer>
+        <!--smoot scroll-->
+<script type="text/javascript">$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});</script>
 
     <script src="http://use.edgefonts.net/alex-brush:n4:all;bad-script:n4:all.js"></script>
     <script src="http://use.edgefonts.net/architects-daughter:n4:all;bad-script:n4:all.js"></script>
