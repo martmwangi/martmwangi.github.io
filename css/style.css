@@ -15,7 +15,8 @@
 }
 body{
     margin: 0;
-    padding: 0
+    padding: 0;
+    scroll-behavior: smooth;
 }
 
 /*STYLING FOR THE ELEMENTS INSIDE THE LANDING PAGE*/
@@ -74,3 +75,6 @@ body{
     text-align: center;
 }
 
+.col{
+    display: inline-block;
+}
