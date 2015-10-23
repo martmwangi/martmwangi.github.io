@@ -153,26 +153,39 @@
         <!--smoot scroll-->
 <script type="text/javascript">
 $(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
+$(document).ready(function()){
+          setBindings();
 });
+function setBindings(){
+    $("nav a").click(function(e){
+        var sectionID = e.currentTarget.id + "section";
+        alert('button id' + sectionID);
+    })
+}
+
 </script>
 
 
     <script src="http://use.edgefonts.net/alex-brush:n4:all;bad-script:n4:all.js"></script>
     <script src="http://use.edgefonts.net/architects-daughter:n4:all;bad-script:n4:all.js"></script>
-    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
-    <script src="js/jquery-1.11.3.js"></script>
-        <script src="js/jquery.smooth-scroll.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+        $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        || location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    }
+});
+
+        </script>
+
     </body>
 </html>
