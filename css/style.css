@@ -99,3 +99,10 @@ body{
 .speed{
     margin-right: 3px;
 }
+footer{
+    background-color: #37474F;
+}
+.white{
+    color: white;
+    font-family: serif;
+}
