@@ -94,15 +94,27 @@ body{
 }
 .int{
     text-align: center;
+    font-family: serif;
 
 }
 .speed{
     margin-right: 3px;
 }
 footer{
+    margin-bottom: -20px;
     background-color: #37474F;
 }
 .white{
     color: white;
     font-family: serif;
+}
+#toole{
+    margin-bottom: -20px;
+}
+form{
+    background-color: transparent;
+    margin-bottom: 50px;
+}
+.btn{
+    padding-left: 30px;
 }
