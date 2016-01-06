@@ -89,6 +89,7 @@ body{
     color: maroon;
 }
 
+
 /*Styling the Skills Section*/
 #skills{
     margin-top: 50px;
@@ -120,32 +121,23 @@ body{
     color: white;
     font-family: serif;
 }
-#toole{
-    margin-bottom: -20px;
-}
-form{
-    background-color: transparent;
-    margin-bottom: 50px;
-}
-.btn{
-    padding-left: 30px;
-}
+/*For scrolling the divs horizontaly*/
+
+
 /*For the portfolio section*/
 #portfolio{
     height: 100vh;
     width: 100%;
     background-color: #78909C;
 }
-.btn-large{
-    background-color: #F57F17;
-    padding: 10px;
+.portfolio-navigator{
+    float: left;
+    height: 100vh;
+    margin-left: -150px;
+    background-color: #263238;
 }
-#tab-buttons{
-    padding-top: 60px;
-    padding-left: 30px;
-}
-.waves-effect waves-light btn-large{
-    padding: 10px;
+.portfolio-section{
+    background-color: yellow;
 }
 /*for the footer*/
 footer{
@@ -156,3 +148,4 @@ footer{
 .footer-copyright{
     padding-top: 10px;
 }
+/*For navigation*/
