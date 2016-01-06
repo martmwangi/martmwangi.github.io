@@ -63,7 +63,16 @@ body{
     font-family: architects-daughter;
     background-color: #607D8B;
     height: 100vh;
+    padding-top: 160px;
 }
+.chip{
+    background-color: #37474F;
+    color: #ECEFF1;
+}
+.center{
+    text-align: center;
+}
+
 .thumb{
     color: purple;
 
