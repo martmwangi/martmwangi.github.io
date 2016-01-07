@@ -40,6 +40,12 @@
 //   });
 
 
+//For the tab layout in the portfolio
+$('#tabs')
+    .tabs()
+    .addClass('ui-tabs-vertical ui-helper-clearfix');
+
+
 
 
 
