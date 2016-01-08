@@ -149,64 +149,6 @@ body{
     color: white;
     font-family: serif;
 }
-#portfolio ul{
-
-}
-#portfolio ul li{
-    display: block;
-    color: white;
-    height: 45px;
-    width: 150px;
-    border: 1px solid white;
-    margin: 20px;
-    background-color: firebrick;
-    border-radius: 3px;
-}
-#portfolio ul li a{
-    color: white;
-    font-family: serif;
-    text-align: center;
-    margin-left: 35px;
-    font-size: 18px;
-    margin-top: 15px;
-
-
-
-}
-.vert{
-    color: white;
-}
-#show-web{
-    color: white;
-    text-decoration: none;
-    width: 100%;
-    height: 250px;
-    margin-top: 60px;
-}
-.port{
-    color: white;
-    text-align: center;
-    font-family: serif;
-    padding-top: 30px;
-}
-.btn{
-    height: 250px;
-    width: 200px;
-    margin-left: -20px;
-}
-#show-apps{
-    color: white;
-    text-decoration: none;
-    height: 250px;
-}
-#show-web:hover{
-    background-color: #78909C;
-    width: 100%;
-}
-#show-apps:hover{
-   background-color: #78909C;
-    width: 100%;
-}
 /*for the footer*/
 footer{
  background-color: #263238;
@@ -230,4 +172,11 @@ footer{
     color: white;
     border: 1px solid white;
 
+}
+#show-web{
+    background-color: firebrick;
+
+}
+#show-apps{
+    background-color: aliceblue;
 }

@@ -1,6 +1,8 @@
 <!Doctype html>
 <html>
 <head><title></title>
+      <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <link rel="stylesheet" href="css/materialize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -19,6 +21,7 @@
     -->
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
      <script type="text/javascript" src="js/script.js"></script>
+
 
     </head>
 
@@ -71,18 +74,37 @@
             </div>
 
 <!--        Portfolio-->
+<!--
         <div id="portfolio" class="scrolling">
                     <div class="container">
-                          <h2 class="center">Portfolio</h2>
-                    <ul class="port-nav">
-                        <li><a href="web-cards" class="center vert">Websites</a></li>
-                        <li><a href="app-cards" class="center vert">Applications</a></li>
-                    </ul>
-                    <div id="web-cards"></div>
-                    <div id="app-cards"></div>
+                        <div class="row">
+                            <ul class="tabs">
+                                <li class="tab col s6"><a href="#show-web" class="active">WEB</a></li>
+                                <li class="tab col s6"><a href="#show-apps">APPS</a></li>
+                            </ul>
+                            <div id="show-web">Yeah </div>
+                            <div id="show-apps">Hell yeah</div>
+                        </div>
 
                 </div>
             </div>
+-->
+
+             <div class="row">
+    <div class="col s12">
+      <ul class="tabs">
+        <li class="tab col s3"><a href="#test1">Test 1</a></li>
+        <li class="tab col s3"><a href="#test2">Test 2</a></li>
+        <li class="tab col s3 "><a href="#test3">Disabled Tab</a></li>
+        <li class="tab col s3"><a href="#test4">Test 4</a></li>
+      </ul>
+    </div>
+    <div id="test1" class="col s12">Test 1</div>
+    <div id="test2" class="col s12">Test 2</div>
+    <div id="test3" class="col s12">Test 3</div>
+    <div id="test4" class="col s12">Test 4</div>
+  </div>
+
      </div>
 <!--        Footer-->
         <footer>
@@ -103,14 +125,28 @@
 
 
 
+<!--
      <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
     <script src="http://use.edgefonts.net/alex-brush:n4:all;bad-script:n4:all.js"></script>
     <script src="http://use.edgefonts.net/architects-daughter:n4:all;bad-script:n4:all.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.0-beta.1/jquery-ui.min.js"></script>
+-->
+        <script>
+            $(document).ready(function(){
+                $('ul.tabs').tabs();
+              });
+            //For the tab layout in the portfolio
+$(document).ready(function(){
+    $('ul.tabs').tabs('select_tab', 'test1','test2','test3','test4');
+
+
+  });
+        </script>
     <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+<!--
     <script>
         $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
@@ -127,7 +163,10 @@
     }
 });
 
+
         </script>
+-->
+
 
     </body>
 </html>
