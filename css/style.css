@@ -175,8 +175,20 @@ footer{
 }
 #show-web{
     background-color: firebrick;
+   padding-top: 150px;
 
 }
 #show-apps{
     background-color: aliceblue;
+    margin-top: 50px;
+    border: 1px solid white;
+}
+.tabs{
+    margin-top: 40px;
+    color: white;
+    background-color: #AFBFFF;
+}
+.tabs li a{
+    color: white;
+    text-decoration: none;
 }

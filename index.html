@@ -21,6 +21,23 @@
     -->
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
      <script type="text/javascript" src="js/script.js"></script>
+            <script>
+            $(document).ready(function(){
+                $('ul.tabs').tabs();
+              });
+            //For the tab layout in the portfolio
+$(document).ready(function(){
+    $('ul.tabs').tabs('select_tab', 'show-web','show-app');
+    	$(function() {
+					$.scrollify({
+						section : ".section-class-name",
+					});
+				});
+
+
+
+  });
+        </script>
 
 
     </head>
@@ -28,7 +45,7 @@
     <body>
         <header></header>
         <div class="loader">Loading...</div>
-        <div id="landing">
+        <div id="landing" class="section-class-name">
                 <div class="container prof">
                             <div class="name bounceInUp animated delay=23sec">
                             <h1>Martin Mwangi</h1>
@@ -43,7 +60,7 @@
                 </div>
         </div>
         <div id="Horizontal-scroll">
-            <div id="bio" class="scrolling">
+            <div id="bio" class="section-class-name">
                 <div class="container">
                 <div class="row">
                     <div class="col s12">
@@ -74,37 +91,40 @@
             </div>
 
 <!--        Portfolio-->
-<!--
-        <div id="portfolio" class="scrolling">
-                    <div class="container">
-                        <div class="row">
-                            <ul class="tabs">
-                                <li class="tab col s6"><a href="#show-web" class="active">WEB</a></li>
-                                <li class="tab col s6"><a href="#show-apps">APPS</a></li>
-                            </ul>
-                            <div id="show-web">Yeah </div>
-                            <div id="show-apps">Hell yeah</div>
-                        </div>
-
-                </div>
-            </div>
--->
-
-             <div class="row">
-    <div class="col s12">
-      <ul class="tabs">
-        <li class="tab col s3"><a href="#test1">Test 1</a></li>
-        <li class="tab col s3"><a href="#test2">Test 2</a></li>
-        <li class="tab col s3 "><a href="#test3">Disabled Tab</a></li>
-        <li class="tab col s3"><a href="#test4">Test 4</a></li>
-      </ul>
-    </div>
-    <div id="test1" class="col s12">Test 1</div>
-    <div id="test2" class="col s12">Test 2</div>
-    <div id="test3" class="col s12">Test 3</div>
-    <div id="test4" class="col s12">Test 4</div>
+        <div id="portfolio" class="section-class-name">
+            <div class="container">
+              <div class="row">
+                    <div class="col s12">
+                      <ul class="tabs">
+                        <li class="tab col s6"><a href="#web-show">Web</a></li>
+                        <li class="tab col s6"><a href="#app-show">Apps</a></li>
+                      </ul>
+                    </div>
+    <div id="web-show" class="col s12">
+                 <div class="container">
+                     <div class="row">
+                         <div class="col s4">
+                         <img src="images/yolomy.png" height="200px" width="200px">
+                         </div>
+                          <div class="col s4">
+                         <img src="images/nasi.png" height="200px" width="200px">
+                         </div>
+                          <div class="col s4">
+                         <img src="images/single.png" height="200px" width="200px">
+                         </div>
+                     </div>
+                 </div>
+        </div>
+    <div id="app-show" class="col s12">
+        <div class="col s6">
+             <img src="images/nasi.png" height="200px" width="200px">
+        </div>
+        <div class="col s6">
+             <img src="images/single.png" height="200px" width="200px">
+        </div>
+   </div>
   </div>
-
+    </div>
      </div>
 <!--        Footer-->
         <footer>
@@ -132,17 +152,10 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.0-beta.1/jquery-ui.min.js"></script>
 -->
-        <script>
-            $(document).ready(function(){
-                $('ul.tabs').tabs();
-              });
-            //For the tab layout in the portfolio
-$(document).ready(function(){
-    $('ul.tabs').tabs('select_tab', 'test1','test2','test3','test4');
 
+               <script>
 
-  });
-        </script>
+			</script>
     <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script type="text/javascript" src="js/materialize.js"></script>
