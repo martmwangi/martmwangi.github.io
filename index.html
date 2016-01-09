@@ -18,27 +18,7 @@
 <!--    For the favicon-->
      <link rel="icon" href="/images/favicon.ico">
 
- <!--  Script for the bar code in the skills section
-    -->
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-             <script>
-                $(function() {
-                    $.scrollify({
-                        section : ".section-class-name",
-                    });
-                });
 
-        $.scrollify({
-        section : ".section-class-name",
-        sectionName : "section-name",
-        easing: "easeOutExpo",
-        scrollSpeed: 1100,
-        offset : 0,
-        scrollbars: true,
-        before:function() {},
-        after:function() {},
-        afterResize:function() {}
-        </script>
      <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="pwstabs-master/assets/jquery.pwstabs.js"></script>
 
@@ -49,22 +29,22 @@
     <body>
         <header></header>
         <div class="loader">Loading...</div>
-        <section id="landing" class="section-class-name">
+        <div id="landing" class="section-class-name">
                 <div class="container prof">
                             <div class="name bounceInUp animated delay=23sec">
                             <h1>Martin Mwangi</h1>
                     </div>
                     <div class="front">
-                            <h2>Front End Developer || <span class="mobile bounceInRight animated">Android Developer</span></h2>
+                            <h2>Front End  || <span class="mobile bounceInRight animated">Android Developer</span></h2>
 
                     </div>
                     <div class="na">
                        <a href="#bio"><i id="hy" class="fa fa-angle-down fa-5x fax hvr-grow"></i></a>
                     </div>
                 </div>
-        </section>
+        </div>
         <div  id="Horizontal-scroll">
-            <section id="bio" class="section-class-name">
+            <div id="bio" class="section-class-name">
                 <div class="container">
                 <div class="row">
                     <div class="col s12">
@@ -86,11 +66,11 @@
                         </div>
                    </div>
                     </div>
-                </section>
+                </div>
             </div>
 
 <!--        Portfolio-->
-        <section id="portfolio" class="section-class-name">
+        <div id="portfolio" class="section-class-name">
             <div class="container">
                 <div class="row">
                     <div class="col s12">
@@ -118,7 +98,7 @@
                     </div>
                 </div>
             </div>
-     </section>
+     </div>
 <!--        Footer-->
         <footer>
         <div class="container">
@@ -152,7 +132,6 @@
     <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script type="text/javascript" src="js/materialize.js"></script>
-<!--
     <script>
         $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
@@ -171,7 +150,6 @@
 
 
         </script>
--->
 
 
     </body>
