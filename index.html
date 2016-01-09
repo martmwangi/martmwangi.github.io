@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="pwstabs-master/assets/jquery.pwstabs.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
@@ -20,24 +21,27 @@
  <!--  Script for the bar code in the skills section
     -->
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-     <script type="text/javascript" src="js/script.js"></script>
-            <script>
-            $(document).ready(function(){
-                $('ul.tabs').tabs();
-              });
-            //For the tab layout in the portfolio
-$(document).ready(function(){
-    $('ul.tabs').tabs('select_tab', 'show-web','show-app');
-    	$(function() {
-					$.scrollify({
-						section : ".section-class-name",
-					});
-				});
+             <script>
+                $(function() {
+                    $.scrollify({
+                        section : ".section-class-name",
+                    });
+                });
 
-
-
-  });
+        $.scrollify({
+        section : ".section-class-name",
+        sectionName : "section-name",
+        easing: "easeOutExpo",
+        scrollSpeed: 1100,
+        offset : 0,
+        scrollbars: true,
+        before:function() {},
+        after:function() {},
+        afterResize:function() {}
         </script>
+     <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="pwstabs-master/assets/jquery.pwstabs.js"></script>
+
 
 
     </head>
@@ -45,7 +49,7 @@ $(document).ready(function(){
     <body>
         <header></header>
         <div class="loader">Loading...</div>
-        <div id="landing" class="section-class-name">
+        <section id="landing" class="section-class-name">
                 <div class="container prof">
                             <div class="name bounceInUp animated delay=23sec">
                             <h1>Martin Mwangi</h1>
@@ -58,9 +62,9 @@ $(document).ready(function(){
                        <a href="#bio"><i id="hy" class="fa fa-angle-down fa-5x fax hvr-grow"></i></a>
                     </div>
                 </div>
-        </div>
-        <div id="Horizontal-scroll">
-            <div id="bio" class="section-class-name">
+        </section>
+        <div  id="Horizontal-scroll">
+            <section id="bio" class="section-class-name">
                 <div class="container">
                 <div class="row">
                     <div class="col s12">
@@ -82,50 +86,39 @@ $(document).ready(function(){
                         </div>
                    </div>
                     </div>
-                </div>
-                 <div class="container">
-                    <div class="row">
-                        <a href="#portfolio" id="#right-button"><i class="fa fa-angle-right fa-3x"></i></a>
-                    </div>
-                </div>
+                </section>
             </div>
 
 <!--        Portfolio-->
-        <div id="portfolio" class="section-class-name">
+        <section id="portfolio" class="section-class-name">
             <div class="container">
-              <div class="row">
+                <div class="row">
                     <div class="col s12">
-                      <ul class="tabs">
-                        <li class="tab col s6"><a href="#web-show">Web</a></li>
-                        <li class="tab col s6"><a href="#app-show">Apps</a></li>
-                      </ul>
+                        <h2 class="center">Portfolio</h2>
+                       <div class="hello_world">
+                               <div data-pws-tab="anynameyouwant1" data-pws-tab-name="Websites">
+                                   <div class="col s4">
+                                    <img src="images/yolomy.png" height="200px" width="200px">
+                                   </div>
+                          <div class="col s4">
+                                    <img src="images/single.png" height="200px" width="200px">
+                                   </div>
+                                   <div class="col s4">
+                                     <img src="images/fred.png" height="200px" width="200px">
+                                   </div>
+
+                           </div>
+                               <div data-pws-tab="anynameyouwant2" data-pws-tab-name="Apps">
+                           <div class="col s4">
+                                   <img src="images/fuji.jpg" height="200px width=200px">
+                                   </div>
+                           </div>
+
+                       </div>
                     </div>
-    <div id="web-show" class="col s12">
-                 <div class="container">
-                     <div class="row">
-                         <div class="col s4">
-                         <img src="images/yolomy.png" height="200px" width="200px">
-                         </div>
-                          <div class="col s4">
-                         <img src="images/nasi.png" height="200px" width="200px">
-                         </div>
-                          <div class="col s4">
-                         <img src="images/single.png" height="200px" width="200px">
-                         </div>
-                     </div>
-                 </div>
-        </div>
-    <div id="app-show" class="col s12">
-        <div class="col s6">
-             <img src="images/nasi.png" height="200px" width="200px">
-        </div>
-        <div class="col s6">
-             <img src="images/single.png" height="200px" width="200px">
-        </div>
-   </div>
-  </div>
-    </div>
-     </div>
+                </div>
+            </div>
+     </section>
 <!--        Footer-->
         <footer>
         <div class="container">
