@@ -183,6 +183,9 @@ footer{
     margin-top: 50px;
     border: 1px solid white;
 }
+.img{
+    border: 4px solid blue;
+}
 .tabs{
     margin-top: 40px;
     color: white;
