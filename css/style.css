@@ -23,7 +23,7 @@ body{
 .name{
     color: white;
     font-family: bad-script;
-    margin-left: 30%;
+    margin-left: 20%;
 
 
 }
@@ -39,10 +39,14 @@ body{
 
 .mobile{
     color: white;
-    font-family: bad-script;
+    font-family: 'Lora', serif;
     border-bottom: 2px solid white;
     padding-top: 5px;
+    margin-left: 40px;
 
+}
+h1{
+ font-family: 'Lora', serif;
 }
 .prof{
     padding-top: 150px;
