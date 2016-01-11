@@ -162,6 +162,12 @@ footer{
 }
 /*For navigation*/
 /*Css for the Tab layout*/
+#contact{
+    height: 80vh;
+    width: 100%;
+    background-color:cornsilk;
+}
+
 .port-nav{
 
 }

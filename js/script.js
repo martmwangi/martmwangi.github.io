@@ -25,7 +25,7 @@ jQuery(document).ready(function($){
 
       // Themes available: default: '' / pws_theme_violet / pws_theme_green / pws_theme_yellow / pws_theme_gold /
       // pws_theme_orange / pws_theme_red / pws_theme_purple / pws_theme_grey
-      theme: '',
+      theme: 'pws_theme_dark_grey',
 
       // Right to left support: true/ false
       rtl: false
