@@ -3,4 +3,11 @@
 <head>
 
 
-</html>
+</html
+
+  <div id="social_media" class="col s6">
+                     <h3>Social Media</h3>
+                      <a href="https://twitter.com/luthermwangi" class="twitter-follow-button" data-show-count="false">Follow @luthermwangi</a>
+                     <br>
+                     <a class="github-button" href="https://github.com/martmwangi" data-style="mega" data-count-href="/martmwangi/followers" data-count-api="/users/martmwangi#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @martmwangi on GitHub">Follow @martmwangi</a>
+                 </div>

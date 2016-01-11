@@ -57,6 +57,12 @@ h1{
     padding-top: 70px;
 
 }
+.btn{
+
+}
+.Q{
+    color: white;
+}
 /*STYLING THE BIO SECTION*/
 #bio{
     text-align: center;
@@ -165,7 +171,15 @@ footer{
 #contact{
     height: 80vh;
     width: 100%;
-    background-color:cornsilk;
+    background-color: #ECEFF1;
+}
+.cont{
+   margin-bottom: 30px;
+    margin-left: 560px;
+    font-family: serif;
+}
+.conts{
+    margin-left: 400px;
 }
 
 .port-nav{
