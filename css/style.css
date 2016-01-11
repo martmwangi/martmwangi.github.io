@@ -35,14 +35,11 @@ body{
 .front{
     color: white;
     font-family: bad-script;
-    margin-left: 30%;
-
-
 }
+
 .mobile{
     color: white;
     font-family: bad-script;
-    margin-left: 30%;
     border-bottom: 2px solid white;
     padding-top: 5px;
 
@@ -52,7 +49,7 @@ body{
 }
 .na{
     color: white;
-    padding-left: 40%;
+    padding-left: 45%;
     padding-top: 70px;
 
 }
