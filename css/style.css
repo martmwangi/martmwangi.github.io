@@ -23,7 +23,17 @@ body{
 .down_arrow{
     align-items: center;
 }
-
+#profiling{
+    padding-top: 220px;
+}
+.name{
+    margin-left: -30px;
+}
+.fa-angle-down{
+    color: white;
+    margin-left: -60px;
+    padding-top: 100px;
+}
 
 
 
