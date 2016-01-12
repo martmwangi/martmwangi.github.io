@@ -20,40 +20,29 @@ body{
 }
 
 /*STYLING FOR THE ELEMENTS INSIDE THE LANDING PAGE*/
-.name{
-    color: white;
-    font-family: bad-script;
-    margin-left: 20%;
-
-
-}
-.fax{
-    color: white;
-    height: 40px;
-    width: 40px;
-}
-.front{
-    color: white;
-    font-family: bad-script;
+.down_arrow{
+    align-items: center;
 }
 
-.mobile{
-    color: white;
-    font-family: 'Lora', serif;
-   }
-h1{
- font-family: 'Lora', serif;
- margin-left: -70px;
-}
-.prof{
-    padding-top: 150px;
-    padding-left: 100px;
-}
-.na{
-    color: white;
-    padding-left: 300px;
-    margin-top: 280px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .btn{
   background-color: #00BCD4;
 }

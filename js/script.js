@@ -45,8 +45,14 @@ jQuery(document).ready(function($){
 //      }, "fast");
 //   });
 
+//For the button
+document.getElementById("submit").addEventListener("click",function(){
+    window.confirm("Thank you for your time. Will get back to you shortly");
+})
 
 
+//Resetting the form after submmission
+document.getElementById("myForm").reset();
 
 
 

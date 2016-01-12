@@ -28,19 +28,18 @@
 
     <body>
         <header></header>
-        <div class="loader">Loading...</div>
-        <div id="landing" class="section-class-name">
-                <div class="container prof">
-                            <div class="name bounceInUp animated delay=23sec">
-                            <h2>Martin Mwangi</h2>
+           <div id="landing" class="section-class-name">
+                <div class="container">
+                    <div class="bounceInUp animated delay=23sec">
+                            <h2 class="center">Martin Mwangi</h2>
                     </div>
-                    <div class="front">
-                            <h3 class="mobile bounceInRight animated center">Front End Web || Android Developer</h3>
-                    </div>
-                    <div class="na">
-                       <a href="#bio"><i id="hy" class="fa fa-angle-down fa-5x fax hvr-grow"></i></a>
-                    </div>
-                </div>
+            <div>
+            <h3 class="center bounceInRight animated center">Front End Web || Android Developer</h3>
+            </div>
+            <div class="down_arrow">
+               <a href="#bio"><i id="hy" class="fa fa-angle-down fa-5x fax hvr-grow"></i></a>
+            </div>
+        </div>
         </div>
         <div  id="Horizontal-scroll">
             <div id="bio" class="section-class-name">
@@ -119,19 +118,19 @@
 <div id="contact">
     <div class="container">
      <div class="row">
-         <form class="col s12">
+         <form class="col s12" action="http://formspree.io/martmwangi86@gmail.com" method="post" id="myform">
              <div class="row">
                  <h3 class="cont">Contact</h3>
                  <div class="input-field col s6">
                      <i class="material-icons prefix">account_circle</i>
-                     <input id="full_name" type="text" class="validate">
+                     <input id="full_name" type="text" class="validate" name="name">
                      <label for="first_name">Full name</label>
                  </div>
 
                  <div class="row">
                  <div class="input-field col s6">
                        <i class="material-icons prefix">email</i>
-                     <input id="email" type="text" class="validate">
+                     <input id="email" type="text" class="validate" name="_replyto: ">
                      <label for="email">Email</label>
                      </div>
 
@@ -140,7 +139,7 @@
                      <div class="row">
                      <div class="input-field col s12">
                          <i class="material-icons prefix">message</i>
-                          <textarea id="message" class="materialize-textarea"></textarea>
+                          <textarea id="message" class="materialize-textarea" name="message"></textarea>
                          <label for="message">Message</label>
                          </div>
                      </div>
@@ -148,13 +147,17 @@
                  <div class="container">
                  <div class="row">
                      <div class="col s12">
-                          <a class="waves-effect waves-light btn conts">Send</a>
+                        <button class="btn waves-effect waves-light conts" type="submit" name="action" value="send" id="submit">Submit
+                            <i class="material-icons right"></i>
+                        </button>
+
                      </div>
 
                      </div>
                      </div>
 
              </div>
+<!--             <input type="hidden" name="_next" value="//martmwangi.github.io" />-->
          </form>
     </div>
     </div>
