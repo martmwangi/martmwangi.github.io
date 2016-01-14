@@ -139,15 +139,16 @@ body{
      color: #212121;
    }
 /*for the footer*/
-footer{
+#last{
  background-color: #263238;
  color: white;
- height: 90px;
- margin-top: -50px;
+ overflow: hidden;
+ width: 100%;
+ margin-top: -40px;
+ }
 
-}
 .footer-copyright{
-
+padding-top: 90px;
 }
 /*For navigation*/
 /*Css for the Tab layout*/

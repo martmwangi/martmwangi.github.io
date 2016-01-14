@@ -1,7 +1,11 @@
 //for fullpage scroll
 $(document).ready(function() {
-    $('#fullpage').fullpage();
+    $('#fullpage').fullpage({
+    anchors: ['fish'],
+    menu: '#myMenu'
 });
+});
+
 
 jQuery(document).ready(function($){
    $('.hello_world').pwstabs({
