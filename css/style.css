@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 110vh;
-    margin-top: -31px;
+    height: 150vh;
+   margin-bottom: -15px;
     background-image: url(../images/land3.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -35,24 +35,6 @@ body{
     padding-top: 100px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .btn{
   background-color: #00BCD4;
 }
@@ -66,8 +48,8 @@ body{
     font-family: architects-daughter;
     background-color: #607D8B;
     height: 100vh;
-    padding-top: 160px;
     width: 100%;
+
 }
 .chip{
     background-color: #37474F;
@@ -161,10 +143,11 @@ footer{
  background-color: #263238;
  color: white;
  height: 90px;
+ margin-top: -50px;
 
 }
 .footer-copyright{
-    padding-top: 10px;
+
 }
 /*For navigation*/
 /*Css for the Tab layout*/

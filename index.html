@@ -23,12 +23,20 @@
     <script type="text/javascript" src="pwstabs-master/assets/jquery.pwstabs.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
 
+<!--    For the full page scroll plugin-->
+    <link rel="stylesheet" href="fullPage.js-master/jquery.fullPage.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="fullPage.js-master/vendors/jquery.easings.min.js"></script>
+    <script type="text/javascript" src="fullPage.js-master/vendors/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="fullPage.js-master/jquery.fullPage.js"></script>
+
 
     </head>
 
     <body>
         <header></header>
-           <div id="landing" class="section-class-name">
+    <div id="fullpage">
+           <div id="landing" class="section active">
                 <div class="container" id="profiling">
                     <div class="bounceInUp animated delay=23sec">
                             <h2 class="center name">Martin Mwangi</h2>
@@ -41,141 +49,142 @@
             </div>
         </div>
         </div>
-        <div  id="Horizontal-scroll">
-            <div id="bio" class="section-class-name">
-                <div class="container">
-                <div class="row">
-                    <div class="col s12">
-                        <div class="card knees">
-                            <div class="card-content">
-                                <h3 class="center">Bio</h3>
-                                Hi,call me Mart, passionate about front-end web development and<br> also very passionate
-                    in creating mobile applications.<br> Any activity that involves tech am always interested. I also enjoy
-                    Rock climbing,Reading African Literature and wildlife. <br>
-                                <h4 class="center">Skills</h4>
-                                <div class="chip">HTML</div>
-                                 <div class="chip">CSS</div>
-                                 <div class="chip">JS</div>
-                                 <div class="chip">Python</div>
-                                 <div class="chip">Android</div>
+        <div class="section">
+                        <div id="bio" class="slide">
+                            <div class="container">
+                            <div class="row">
+                                <div class="col s12">
+                                    <div class="card knees">
+                                        <div class="card-content">
+                                            <h3 class="center">Bio</h3>
+                                            Hi,call me Mart, passionate about front-end web development and<br> also very passionate
+                                in creating mobile applications.<br> Any activity that involves tech am always interested. I also enjoy
+                                Rock climbing,Reading African Literature and wildlife.<br>
+                                            <h4 class="center">Skills</h4>
+                                            <div class="chip">HTML</div>
+                                             <div class="chip">CSS</div>
+                                             <div class="chip">JS</div>
+                                             <div class="chip">Python</div>
+                                             <div class="chip">Android</div>
 
+                                        </div>
+
+                                    </div>
+                               </div>
+                                </div>
                             </div>
-
                         </div>
-                   </div>
-                    </div>
-                </div>
-            </div>
 
-<!--        Portfolio-->
-        <div id="portfolio" class="section-class-name">
-            <div class="container">
-                <div class="row">
-                    <div class="col s12">
-                        <h2 class="center">Portfolio</h2>
-                       <div class="hello_world">
-                               <div data-pws-tab="anynameyouwant1" data-pws-tab-name="Websites">
-                                   <div class="col s4">
-<!--
-                                       <ul class="grid cs-style-1">
-                                           <li>
-                                               <figure>
--->
+            <!--        Portfolio-->
+                    <div id="portfolio" class="slide">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col s12">
+                                    <h2 class="center">Portfolio</h2>
+                                   <div class="hello_world">
+                                           <div data-pws-tab="anynameyouwant1" data-pws-tab-name="Websites">
+                                               <div class="col s4">
+            <!--
+                                                   <ul class="grid cs-style-1">
+                                                       <li>
+                                                           <figure>
+            -->
 
-<!--                                                   <figcaption>-->
-<!--                                                   <h3>YOLOMY</h3>-->
-<!--                                                       <span>Simple webstore</span>-->
+            <!--                                                   <figcaption>-->
+            <!--                                                   <h3>YOLOMY</h3>-->
+            <!--                                                       <span>Simple webstore</span>-->
 
-    <a href="http://yolomy254.bitballoon.com" target="_blank"><img  src="images/yolomy.png" height="200px" width="100%"></a>
-<!--
-                                                   </figcaption>
-                                               </figure>
-                                           </li>
-                                       </ul>
--->
+                <a href="http://yolomy254.bitballoon.com" target="_blank"><img  src="images/yolomy.png" height="200px" width="100%"></a>
+            <!--
+                                                               </figcaption>
+                                                           </figure>
+                                                       </li>
+                                                   </ul>
+            -->
+
+                                               </div>
+                                      <div class="col s4 img">
+                            <a href="http://gnome254.bitballoon.com" target="_blank"><img src="images/single.png" height="200px" width="100%"></a>
+                                               </div>
+                                               <div class="col s4 img">
+                                                  <a href="http://gnome254.bitballoon.com" target="_blank"><img  src="images/gnome.png" height="200px" width="100%"></a>
+
+                                               </div>
+
+                                       </div>
+                                           <div data-pws-tab="anynameyouwant2" data-pws-tab-name="Apps">
+                                       <div class="col s4 img">
+                                           <a href="#"><img src="images/mtindo.jpg" height="200px width=200px"></a>
+                                               </div>
+                                       </div>
 
                                    </div>
-                          <div class="col s4 img">
-                <a href="http://gnome254.bitballoon.com" target="_blank"><img src="images/single.png" height="200px" width="100%"></a>
-                                   </div>
-                                   <div class="col s4 img">
-                                      <a href="http://gnome254.bitballoon.com" target="_blank"><img  src="images/gnome.png" height="200px" width="100%"></a>
-
-                                   </div>
-
-                           </div>
-                               <div data-pws-tab="anynameyouwant2" data-pws-tab-name="Apps">
-                           <div class="col s4 img">
-                               <a href="#"><img src="images/mtindo.jpg" height="200px width=200px"></a>
-                                   </div>
-                           </div>
-
-                       </div>
-                    </div>
-                </div>
-            </div>
-     </div>
-<div id="contact">
-    <div class="container">
-     <div class="row">
-         <form class="col s12" action="http://formspree.io/martmwangi86@gmail.com" method="post" id="myform">
-             <div class="row">
-                 <h3 class="cont">Contact</h3>
-                 <div class="input-field col s6">
-                     <i class="material-icons prefix">account_circle</i>
-                     <input id="full_name" type="text" class="validate" name="name">
-                     <label for="first_name">Full name</label>
+                                </div>
+                            </div>
+                        </div>
                  </div>
-
+            <div id="contact" class="slide">
+                <div class="container">
                  <div class="row">
-                 <div class="input-field col s6">
-                       <i class="material-icons prefix">email</i>
-                     <input id="email" type="text" class="validate" name="_replyto: ">
-                     <label for="email">Email</label>
-                     </div>
+                     <form class="col s12" action="http://formspree.io/martmwangi86@gmail.com" method="post" id="myform">
+                         <div class="row">
+                             <h3 class="cont">Contact</h3>
+                             <div class="input-field col s6">
+                                 <i class="material-icons prefix">account_circle</i>
+                                 <input id="full_name" type="text" class="validate" name="name">
+                                 <label for="first_name">Full name</label>
+                             </div>
 
-                 </div>
-                 <div class="container">
-                     <div class="row">
-                     <div class="input-field col s12">
-                         <i class="material-icons prefix">message</i>
-                          <textarea id="message" class="materialize-textarea" name="message"></textarea>
-                         <label for="message">Message</label>
+                             <div class="row">
+                             <div class="input-field col s6">
+                                   <i class="material-icons prefix">email</i>
+                                 <input id="email" type="text" class="validate" name="_replyto: ">
+                                 <label for="email">Email</label>
+                                 </div>
+                             </div>
+                             <div class="container">
+                                 <div class="row">
+                                 <div class="input-field col s12">
+                                     <i class="material-icons prefix">message</i>
+                                      <textarea id="message" class="materialize-textarea" name="message"></textarea>
+                                     <label for="message">Message</label>
+                                     </div>
+                                 </div>
+                            </div>
+                             <div class="container">
+                             <div class="row">
+                                 <div class="col s12">
+                                    <button class="btn waves-effect waves-light conts" type="submit" name="action" value="send"                                                               id="submit">Submit
+                                        <i class="material-icons right"></i>
+                                    </button>
+
+                                 </div>
+
+                                 </div>
+                                 </div>
+
                          </div>
-                     </div>
+                        <input type="hidden" name="_next" value="//martmwangi.github.io" />
+                     </form>
                 </div>
-                 <div class="container">
-                 <div class="row">
-                     <div class="col s12">
-                        <button class="btn waves-effect waves-light conts" type="submit" name="action" value="send" id="submit">Submit
-                            <i class="material-icons right"></i>
-                        </button>
+                </div>
 
-                     </div>
-
-                     </div>
-                     </div>
-
-             </div>
-            <input type="hidden" name="_next" value="//martmwangi.github.io" />
-         </form>
-    </div>
-    </div>
-
-</div>
+            </div>
+            </div>
+        </div>
 <!--        Footer-->
-        <footer>
-        <div class="container">
-            <div class="row">
-            <div class="col s12"></div>
-                <div class="footer-copyright">
-                    <div class="container">
-                     <p class="center">&copy; Copyright 2016 MartMwangi</p>
-                    </div>
-                </div>
+<footer class="section">
+<div class="container">
+    <div class="row">
+    <div class="col s12"></div>
+        <div class="footer-copyright">
+            <div class="container">
+             <p class="center">&copy; Copyright 2016 MartMwangi</p>
             </div>
-            </div>
-        </footer>
+        </div>
+    </div>
+    </div>
+</footer>
 
 
 

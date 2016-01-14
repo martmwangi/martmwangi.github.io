@@ -1,3 +1,8 @@
+//for fullpage scroll
+$(document).ready(function() {
+    $('#fullpage').fullpage();
+});
+
 jQuery(document).ready(function($){
    $('.hello_world').pwstabs({
 
