@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 150vh;
-   margin-bottom: -15px;
+    height: 100vh;
+    margin-bottom: -15px;
     background-image: url(../images/land3.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -18,13 +18,15 @@ body{
     padding: 0;
     overflow-x: hidden;
 }
-
+myMenu{
+    margin-bottom: -370px;
+}
 /*STYLING FOR THE ELEMENTS INSIDE THE LANDING PAGE*/
 .down_arrow{
     align-items: center;
 }
 #profiling{
-    padding-top: 220px;
+
 }
 .name{
     margin-left: -30px;
