@@ -66,22 +66,8 @@ myMenu{
     text-align: center;
     font-family: 'Raleway', sans-serif;
 }
-.move-right{
-    float: right;
-    color: white;
-    margin-bottom: 30px;
-}
 
-.thumb{
-    color: purple;
 
-}
-.blue{
-    background-color: rgb(0,166,229);
-}
-.maroon{
-    color: maroon;
-}
 
 
 /*Styling the Skills Section*/
