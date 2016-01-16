@@ -11,6 +11,7 @@
     background-attachment: fixed;
     color: white;
     overflow: hidden;
+    font-family: 'Raleway', sans-serif;
 
 }
 body{
@@ -30,6 +31,7 @@ myMenu{
 }
 .name{
     margin-left: -30px;
+    font-family: 'Raleway', sans-serif;
 }
 .fa-angle-down{
     color: white;
@@ -47,11 +49,14 @@ myMenu{
 #bio{
     text-align: center;
     font-size: 20px;
-    font-family: architects-daughter;
+    font-family: 'Poiret One', cursive;
     background-color: #607D8B;
     height: 100vh;
     width: 100%;
-
+}
+.fresh{
+    font-family: 'Poiret One', cursive;
+    font-weight: 600;
 }
 .chip{
     background-color: #37474F;
@@ -59,6 +64,7 @@ myMenu{
 }
 .center{
     text-align: center;
+    font-family: 'Raleway', sans-serif;
 }
 .move-right{
     float: right;
@@ -129,7 +135,7 @@ myMenu{
 #portfolio{
     height: 100vh;
     width: 100%;
-    background-color: #BDBDBD;
+    background-color: #455A64;
     margin-top: -27px;
 }
 #portfolio h2{
@@ -138,7 +144,7 @@ myMenu{
 }
 /*Styling for the contact section*/
 .input-field label {
-     color: #212121;
+     color: #D0F8CE;
    }
 /*for the footer*/
 #last{
@@ -157,12 +163,13 @@ padding-top: 90px;
 #contact{
     height: 80vh;
     width: 100%;
-    background-color: #ECEFF1;
+    background-color: #37474F;
 }
 .cont{
-   margin-bottom: 30px;
-    margin-left: 400px;
-    font-family: serif;
+
+    font-family: 'Poiret One', cursive;
+    font-weight: 600;
+    color: white;
 }
 .conts{
     margin-left: 267px;
@@ -175,7 +182,6 @@ padding-top: 90px;
     display: block;
     width: 140px;
     height: 25px;
-    background-color: firebrick;
     color: white;
     border: 1px solid white;
 
