@@ -63,6 +63,14 @@ document.getElementById("submit").addEventListener("click",function(){
 //Resetting the form after submmission
 document.getElementById("myForm").reset();
 
+$(function () {
+    $('.tlt').textillate({
+        in: {
+            effect: 'fadeIn'
+        }
+    });
+})
+
 
 
 
