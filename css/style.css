@@ -287,3 +287,6 @@ padding-top: 90px;
 .input-field .prefix.active {
      color: white;
    }
+ .input-field input[type=text]:focus + label {
+     color: white;
+   }
