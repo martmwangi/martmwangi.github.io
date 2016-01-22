@@ -14,6 +14,11 @@
     font-family: 'Raleway', sans-serif;
 
 }
+.fa-angle-double-down{
+    color: white;
+    margin-right: 80px;
+    padding-top: 50px;
+}
 body{
     margin: 0;
     padding: 0;
@@ -131,15 +136,17 @@ myMenu{
    }
 /*for the footer*/
 #last{
+ position: fixed;
  background-color: #263238;
- color: white;
  overflow: hidden;
  width: 100%;
- margin-top: -40px;
+ height: 100px;
+ margin-top: -60px;
  }
 
-.footer-copyright{
-padding-top: 90px;
+#copy{
+    color: white;
+    margin-top: -190px;
 }
 /*For navigation*/
 /*Css for the Tab layout*/

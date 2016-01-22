@@ -42,7 +42,7 @@
     <body>
         <header></header>
     <div id="fullpage">
-           <div id="landing" class="section active">
+           <div id="landing" class="section active" data-anchor="firstSection">
                 <div class="container" id="profiling">
                     <div class="bounceInUp animated delay=23sec">
                             <h2 class="center name">Martin Mwangi</h2>
@@ -50,15 +50,23 @@
             <div>
             <h3 class="center tlt" data-in-effect="fadeIn">Front End Web || Android Developer</h3>
             </div>
-            <div class="center">
-                <ul id="myMenu">
-                    <li data-menuanchor="fish"><a href="#fish">Luc</a></li>
-                </ul>
-            </div>
+            <div class="container">
+                    <div class="row">
+                        <ul id="menu">
+                            <li data-menuanchor="secondPage" >
+                                 <div class="col s12 center">
+                             <a href="#secondPage"><i class="fa fa-angle-double-down fa-5x hvr-grow"></i></a>
+                            </div>
+                            </li>
+                        </ul>
+                    </div>
+             </div>
+
+
         </div>
         </div>
-        <div id="fish" class="section">
-                        <div id="bio" class="slide">
+        <div id="section1" class="section" data-anchor="secondSection">
+                        <div id="bio" class="slide" data-anchor="firstSlide">
                             <div class="container">
                             <div class="row">
                                 <div class="col s12">
@@ -85,7 +93,7 @@
                         </div>
 
             <!--        Portfolio-->
-                    <div id="portfolio" class="slide">
+                    <div id="portfolio" class="slide" data-anchor="secondSlide">
                         <div class="container">
                             <div class="row">
                                 <div class="col s12">
@@ -132,7 +140,7 @@
                             </div>
                         </div>
                  </div>
-            <div id="contact" class="slide">
+            <div id="contact" class="slide" data-anchor="thirdSlide">
                 <div class="container">
                  <div class="row">
                      <form class="col s12" action="http://formspree.io/martmwangi86@gmail.com" method="post" id="myform">
@@ -181,22 +189,15 @@
             </div>
             </div>
         </div>
-    !-- Modal Structure -->
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4>Thanks for your time, will get back to you shortly</h4>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Back</a>
-    </div>
-  </div>
 <!--        Footer-->
         <div id="last" class="section">
+            <div class="container">
                 <div class="row">
-                    <div class="col s12">
-                        <p class="center">&copy; Copyright 2016 MartMwangi</p>
+                <div class="col s12">
+                <p id="copy" class="center">&copy; Copyright 2016 MartMwangi</p>
                     </div>
                 </div>
+            </div>
         </div>
 
     <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
@@ -218,9 +219,6 @@
     }
 });
 
-
         </script>
-
-
     </body>
 </html>

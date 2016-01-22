@@ -1,10 +1,22 @@
 //for fullpage scroll
 $(document).ready(function() {
     $('#fullpage').fullpage({
-    anchors: ['fish'],
-    menu: '#myMenu'
-});
-});
+    anchors: ['firstSection','secondPage','firstSlide','SecondSlide','thirdSlide'],
+    menu: '#myMenu',
+    css3: true,
+    scrollingSpeed: 1000
+       });
+
+            $('#showExamples').click(function(e){
+                e.stopPropagation();
+                e.preventDefault();
+                $('#examplesList').toggle();
+            });
+
+            $('html').click(function(){
+                $('#examplesList').hide();
+            });
+        });
 
 
 jQuery(document).ready(function($){
