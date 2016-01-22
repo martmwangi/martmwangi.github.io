@@ -16,7 +16,7 @@
 }
 .fa-angle-double-down{
     color: white;
-    margin-right: 80px;
+    margin-right: 75px;
     padding-top: 50px;
 }
 body{
@@ -135,19 +135,27 @@ myMenu{
      color: #D0F8CE;
    }
 /*for the footer*/
-#last{
+#footer{
  position: fixed;
+ display: block;
  background-color: #263238;
  overflow: hidden;
  width: 100%;
- height: 100px;
- margin-top: -60px;
- }
+ height: 60px;
+ padding: 20px 0 0 0;
+ text-align: center;
+ color: white;
+ margin-top:-100px;
+font-family: serif;
+padding-right: 80px;
 
-#copy{
-    color: white;
-    margin-top: -190px;
 }
+#footer{
+		bottom:0px;
+    z-index: 10000;
+	}
+
+
 /*For navigation*/
 /*Css for the Tab layout*/
 #contact{
