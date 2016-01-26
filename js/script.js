@@ -57,7 +57,8 @@ jQuery(document).ready(function($){
 $(function () {
     $('.tlt').textillate({
         in: {
-            effect: 'fadeIn'
+            effect: 'fadeIn',
+            shuffle: 'true'
         }
     });
 })
